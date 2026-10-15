@@ -1,0 +1,67 @@
+body
+{
+font-family: Arial, sans-serif;
+color:#E0115F;
+}
+
+.main {
+border: 10px ridge #008B8B;
+border-radius: 15px;
+padding: 20px;
+margin: 30px auto;
+width: 95%;
+box-sizing: border-box;
+overflow: auto;
+}
+
+.header{
+text-align: right;
+margin-bottom: 15px;
+border: 2px solid black;
+padding: 10px;
+background-color: #AFEEEE;
+}
+
+.friend{
+float: left;
+width: 15%;
+box-sizing: border-box;
+margin-bottom: 15px;
+background-color: #0CBCEB;
+border: 6px solid black;
+}
+
+.friend h1 {
+text-align: center;
+font-weight: bold;
+}
+
+.journal {
+float: right;
+margin-bottom: 15px;
+border: 5px solid #008B8B;
+width: 84.5%;
+box-sizing: border-box;
+padding: 10px;
+background-color:#E0FFFF;
+
+}
+
+.image{
+width: 150px;
+height: auto;
+float: right;
+margin-left: 15px;
+}
+
+.text{
+color: white;
+}
+
+.heading{
+color:#006666;
+}
+
+.ul{
+border-bottom: 4px dashed black;
+}

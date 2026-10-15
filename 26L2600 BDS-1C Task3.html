@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservation Form</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial;
+      color: #0A174E;
+    }
+
+    .reservation-box {
+      background-color: #E4ECF5;
+      padding: 20px;
+    }
+
+    table {
+      background-color: #F2F6FA;
+      border: 2px solid #0A174E;
+    }
+
+    caption {
+      color: #0A174E;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    th, td {
+      border: 1px solid #0A174E;
+      padding: 10px;
+    }
+
+    th {
+      text-align: right;
+      background-color: #E4ECF5;
+    }
+
+    input, select {
+      color: #0A174E;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      padding: 5px;
+      width: 190px;
+    }
+
+    input[type="submit"] {
+      background-color: #0A174E;
+      color: white;
+      padding: 7px 20px;
+    }
+
+    .submit-row {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reservation-box">
+    <form>
+      <table>
+        <caption>Continental Hotel Reservation Form</caption>
+
+        <tr>
+          <th><label for="name">Name:</label></th>
+          <td>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+          </td>
+        </tr>
+
+        <tr>
+          <th><label for="email">Email:</label></th>
+          <td>
+            <input type="email" id="email" name="email"
+                   placeholder="info@continental.pk" required>
+          </td>
+        </tr>
+
+        <tr>
+          <th><label for="phone">Mobile No:</label></th>
+          <td>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your cell number" required>
+          </td>
+        </tr>
+
+        <tr>
+          <th><label for="arrival">Arrival Time:</label></th>
+          <td>
+            <input type="time" id="arrival" name="arrival" required>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Stay Dates:</th>
+          <td>
+            <label for="checkin">Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <br><br>
+            <label for="checkout">Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Room Type:</th>
+          <td>
+            <input type="radio" id="single" name="roomType"
+                   value="single" required>
+            <label for="single">Single</label>
+
+            <input type="radio" id="double" name="roomType"
+                   value="double">
+            <label for="double">Double</label>
+            <br>
+            <input type="radio" id="suite" name="roomType"
+                   value="presidential">
+            <label for="suite">Presidential Suite</label>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Preferences:</th>
+          <td>
+            <input type="checkbox" id="smoking" name="preferences"
+                   value="non-smoking">
+            <label for="smoking">Non-Smoking</label>
+            <br>
+            <input type="checkbox" id="internet" name="preferences"
+                   value="internet">
+            <label for="internet">Internet</label>
+            <br>
+            <input type="checkbox" id="mattress" name="preferences"
+                   value="firm-mattress">
+            <label for="mattress">Firm Mattress</label>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Payment Method:</th>
+          <td>
+            <input type="radio" id="cash" name="payment"
+                   value="cash" required>
+            <label for="cash">Cash</label>
+
+            <input type="radio" id="check" name="payment"
+                   value="check">
+            <label for="check">Check</label>
+            <br>
+            <input type="radio" id="credit" name="payment"
+                   value="credit-card">
+            <label for="credit">Credit Card</label>
+
+            <select id="pay" name="card">
+              <option value="">Select Card</option>
+              <option value="hbl">HBL</option>
+              <option value="ubl">UBL</option>
+              <option value="meezan">Meezan</option>
+              <option value="standard-chartered">
+                Standard Chartered
+              </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="submit-row">
+            <input type="submit" value="Send Data">
+          </td>
+        </tr>
+
+      </table>
+    </form>
+  </div>
+</body>
+</html>
